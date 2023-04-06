@@ -1,0 +1,200 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Loading date object in js and displaying on page */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+p {
+    display: inline;
+    margin: 5px;
+}
+
+#time {
+    font-size: 60px;
+    color: #004AAD;
+}
+
+#day {
+    font-size: 40px;
+    color: #FF5757;
+}
+
+#date {
+    font-size: 20px;
+    color: #FF5757;
+}
+
+div {
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Loading fonts from server using @font-face */
+
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('DigitalNumbers-Regular.woff') format('woff');
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; 
+    background-color: #333;
+    /*background: no-repeat center/80% url("images\matrixhacker.png") */
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #03A062;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    color: #03A062;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+header nav a {
+    font-size: 24px;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Importing Open Sans Condensed Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+#digital-clock {
+    background-color: #333;
+    -webkit-text-fill-color: #03A062;
+    width: 35%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Digital Numbers Regular';
+    font-size: 64px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #03A062;
+}
+
+
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #03A062;
+}
+
+.img-wrapper {
+    float: left;
+    margin-right: 20px;
+    /* Add some space between the image and text */
+}
+
+p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.text-align {
+    display: flex;
+    align-items: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #03A062;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section div {
+        width: calc(33.33% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #000000;
+    }
+
+    section div:last-child {
+        margin-right: 0;
+    }
+}
